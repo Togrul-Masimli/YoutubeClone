@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #181818;
+}
+
+.container {
+    height: 100%;
+}
+
+.header {
+    height: 56px;
+    background-color: #202020;
+}
+
+.container .main .sidebar {
+    width: 240px;
+    height: 100vh;
+    overflow: auto;
+    background-color: #212121;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .sidebar .row {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 10px 12px 0;
+    border-bottom: 1px solid #383838;
+}
+
+.container .sidebar .row .column {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.container .sidebar .row .column p {
+    color: #e7e7e7;
+}
+
+.container .sidebar .row .column i {
+    color: #909090;
+    font-size: 19px;
+}
+
+.container .sidebar .row .column.active {
+    background-color: #383838;
+}
+
+.container .sidebar .row .column.active i {
+    color: white;
+}
+
+.container .sidebar .row .column.active:hover {
+    background: #4c4c4c;
+}
+
+.container .sidebar .row .column:hover {
+    background-color: #383838;
+}
+
+.container .sidebar .row .column i {
+    margin-left: 30px;
+    margin-right: 23px;
+}
+
+.container .main {
+    display: flex;
+}
+
+.container .main .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #181818;
+    margin-top: 23px;
+    margin-left: 22px;
+}
+
+.container .main .content .sira {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.container .main .content .sira .video {
+    margin-right: 17px;
+}
+
+.container .main .content .sira .video .video-image {
+    width: 295px;
+    min-width: 295px;
+}
+
+.container .main .content .sira .video .video-image figure {
+    width: 295px;
+    min-width: 295px;
+}
+
+.container .main .content .sira .video .video-image figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .main .content .sira .video .video-image {
+    position: relative;
+}
+
+.container .main .content .sira .video .video-image .duration-time {
+    position: absolute;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 33px;
+    height: 17px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    right: 4px;
+    bottom: 8px;
+    line-height: 12px;
+    font-weight: 500;
+    padding-left: 2px;
+}
+
+.container .main .content .sira .video .all {
+    display: flex;
+    margin-top: 10px;
+}
+
+.container .main .content .sira .video .all .profile-picture {
+    height: 36px;
+    width: 36px;
+}
+
+.container .main .content .sira .video .all .profile-picture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.container .main .content .sira .video .all .description {
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.container .main .content .sira .video .all .description .video-name {
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.container .main .content .sira .video .all .description .user-name p {
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+}
+
+.container .main .content .sira .video .all .description .user-name .verify {
+    display: flex;
+    margin-bottom: -4px;
+}
+
+.container .main .content .sira .video .all .description .user-name .izlenme .time-before span {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 5px;
+    left: 1px;
+}
